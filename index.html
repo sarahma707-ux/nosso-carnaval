@@ -43,7 +43,8 @@
             position: relative;
             display: flex;
             flex-direction: column;
-            gap: 40px; /* Espaçamento maior para destacar a linha */
+            gap: 50px; /* Espaçamento aumentado para evitar embolamento */
+            align-items: center; /* Centraliza itens para melhor alinhamento */
         }
         .timeline::before {
             content: '';
@@ -67,17 +68,19 @@
             opacity: 0;
             animation: fadeIn 1s ease-in-out forwards;
             position: relative;
+            width: 100%; /* Garante largura total para alinhamento */
+            max-width: 600px; /* Limita largura para evitar overflow */
         }
         .timeline-item::before {
             content: '';
             position: absolute;
-            left: -22px; /* Alinha com a linha vertical */
+            left: 50%; /* Centraliza o círculo na linha */
             top: 50%;
             width: 20px;
             height: 20px;
             background: #cd853f; /* Círculo conector em terracota */
             border-radius: 50%;
-            transform: translateY(-50%);
+            transform: translate(-50%, -50%); /* Centraliza perfeitamente */
         }
         .timeline-item img {
             width: 150px;
@@ -186,7 +189,7 @@
                 </div>
             </div>
             <div class="timeline-item">
-                <img src="imagens/foto4.jpegf" alt="Sábado, 14 de fevereiro de 2026, 22:34">
+                <img src="imagens/foto4.jpeg" alt="Sábado, 14 de fevereiro de 2026, 22:34">
                 <div class="text">
                     <div class="date">Sábado, 14 de fevereiro de 2026, 22:34</div>
                     <p>Linguagem do amor: atos de engordamento. Uma formiga muito feliz com o docinho feito por seu paladino.</p>
@@ -195,14 +198,14 @@
             <div class="timeline-item">
                 <img src="imagens/foto5.jpeg" alt="Ainda no sábado, 14 de fevereiro de 2026, 22:34">
                 <div class="text">
-                    <div class="date"Ainda no sábado, 14 de fevereiro de 2026, 22:34</div>
+                    <div class="date">Ainda no sábado, 14 de fevereiro de 2026, 22:34</div>
                     <p>Uma formiga muito feliz e bem cuidada!!!</p>
                 </div>
             </div>
             <div class="timeline-item">
                 <img src="imagens/foto6.jpeg" alt="Domingo, 15 de fevereiro de 2026, 03:32">
                 <div class="text">
-                    <div class="date"Domingo, 15 de fevereiro de 2026, 03:32</div>
+                    <div class="date">Domingo, 15 de fevereiro de 2026, 03:32</div>
                     <p>Acompanhada e protegida pelo nosso Ligeirinho, meu neném S2.</p>
                 </div>
             </div>
@@ -217,7 +220,7 @@
                 <img src="imagens/foto8.jpeg" alt="Ainda no domingo, 15 de fevereiro de 2026, 10:08">
                 <div class="text">
                     <div class="date">Ainda no domingo, 15 de fevereiro de 2026, 10:08</div>
-                    <p>A minha foto favorita de todos os tempos. Meu siamês, meu grude. </p>
+                    <p>A minha foto favorita de todos os tempos. Meu siamês, meu grude.</p>
                 </div>
             </div>
             <div class="timeline-item">
